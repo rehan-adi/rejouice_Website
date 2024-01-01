@@ -9,7 +9,7 @@ import './styles.css';
 
 function SlidingImage() {
   return (
-    <div className='w-auto h-[100vh] pt-20 bg-[#FAF8F3]'>
+    <div className='w-auto h-[100vh] pt-4 bg-[#FAF8F3]'>
       <div className='flex px-14 justify-between items-end'>
         <h1 className='text-9xl font-normal'>Get in touch</h1>
         <h1 className='text-2xl'>↵ Contact</h1>

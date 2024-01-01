@@ -2,7 +2,7 @@ import React from 'react'
 
 function Page4() {
   return (
-    <div className='w-auto h-[100vh] pt-36 bg-[#FAF8F3]'>
+    <div className='w-auto h-[100vh] pt-[70px] bg-[#FAF8F3]'>
     <div className='flex items-start pl-[60px] justify-center flex-col'>
       <h1 className='text-2xl text-[#0E0E0E] font-normal'>Harnessing emotions </h1>
       <h1 className='text-2xl text-[#0E0E0E] font-normal'>to connect with your audience.</h1>

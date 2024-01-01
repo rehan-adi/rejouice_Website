@@ -12,7 +12,7 @@ function Page() {
                   <h1 className='text-2xl text-[#0E0E0E]  font-medium'>Paris & San Diego</h1>
               </div>
            </div>
-                 <div className='border-b ml-[64px] mt-3 w-[1400px] border-black'>
+                 <div className='border-b ml-[60px] mt-3 w-[1422px] border-black'>
 
                  </div>
                  <div className='flex justify-center mt-4 items-center' >
