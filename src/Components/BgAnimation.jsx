@@ -1,6 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
 function BgAnimation() {
+
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+  
+    return () => clearInterval(intervalId);
+  }, []);
+  
+  const formattedIST = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Kolkata',
+    second: 'numeric',
+  }).format(currentTime);
+
   return (
     <div className='w-auto h-[100vh] flex flex-col justify-center items-center bg-[#FAF8F3] pt-10'>
       <img
@@ -9,7 +25,7 @@ function BgAnimation() {
         alt="Poster"
       />
       <div className="absolute text-center">
-        <h1 className="text-6xl text-white font-normal">1 seat </h1>
+        <h1 className="text-6xl text-white font-normal">{formattedIST} seat </h1>
         <p className='text-white font-normal'>available for 2024</p>
       </div>
       <svg class="abs tl:0 fit transform rotate:-90deg" className='absolute opacity-80 w-[80vh]' viewBox="0 0 100 100">

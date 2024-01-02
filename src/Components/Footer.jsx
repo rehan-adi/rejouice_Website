@@ -113,7 +113,7 @@ function Footer() {
         <motion.h1
           initial={{ opacity: 0, y: -250 }}
           animate={controls}
-          transition={{ duration: 0.80, ease: 'backInOut' }}
+          transition={{ duration: 5, ease: 'backInOut', delay: 5 }}
           ref={headerRef}
           className='text-[#FFFCF1] rejoice text-[360px] font-medium '>
           <span>r</span>
